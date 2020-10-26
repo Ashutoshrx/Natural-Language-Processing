@@ -58,21 +58,24 @@ useless in natural language processing.
 
 # ALGORITHMS
 
-The goal of this project is to study the classificational data and
-forecast the probability of different classes based on various
-attributes.
-This project uses Naïve Bayes Classifier algorithm to predict the
-classes which is mostly used for text classification. It uses Bayes
-Theorem which predicts the membership probabilities of each
-class such as the probability that given record belongs to a
-particular class. The maximum probability is considered as the
-most likely class.
-We have used Train-test-split function in scikit-learn to split the
-data into a training set and testing set, it could split the whole
-dataset into several packs and in each pack, the indices of the
-testing set would be higher than the training set. By doing this
-can prevent look-ahead bias, which means the model would not
-use future data to train itself
+The goal of this project is to study the classificational data and forecast
+the probability of different classes based on various attributes.
+This project uses Naïve Bayes Classifier and Support Vector
+Machine algorithm to predict the classes which is mostly used for text
+classification.
+It uses Bayes Theorem which predicts the membership probabilities of
+each class such as the probability that given record belongs to a
+particular class. The maximum probability is considered as the most
+likely class.
+It also uses Support Vector Machine outputs an optimal hyperplane
+which categorizes new examples. In two-dimensional space this
+hyperplane is line dividing plane in two parts where in each class lay in
+either side.
+We have used Train-test-split function in scikit-learn to split the data
+into a training set and testing set, it could split the whole dataset into
+several packs and in each pack, the indices of the testing set would be
+higher than the training set. By doing this can prevent look-ahead bias,
+which means the model would not use future data to train itself
 
 # POPULATION EVALUATION METRICS 
 
@@ -89,3 +92,11 @@ The F1 Score is the 2*((precision*recall)/(precision+recall)). It is also called
 # Support
 Support can be calculated as the number of samples of
 the true response that lie in that class.
+
+
+# CONCLUSION
+Both the algorithms (Support Vector Machine & Naïve Bayes
+Theorem) show good results but Support Vector Machine has better
+accuracy than Naïve Bayes Classifier.
+Accuracy for Naïve Bayes Classifier: 95.56%
+Accuracy for Support Vector Machine: 98.07%
